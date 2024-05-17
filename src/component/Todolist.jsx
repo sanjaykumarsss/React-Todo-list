@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Todolist.css'
+// import './Todolist.css'
 
 export default function Todolist() {
     const [task, settask] = useState([]);
@@ -13,7 +13,7 @@ export default function Todolist() {
 
     const addtask = () => {
         if (newtask.trim() !== "") {
-            settask(t => [...t, newtask]);
+            settask([...task, newtask]);
             setnewtask("");
         }
 
@@ -30,7 +30,7 @@ export default function Todolist() {
         if (index > 0) {
             const updatedtask = [...task];
             [updatedtask[index], updatedtask[index - 1]] = [updatedtask[index - 1], updatedtask[index]];
-            settask();
+            settask(updatedtask);
         }
 
     }
@@ -39,7 +39,7 @@ export default function Todolist() {
         if (index < task.length - 1) {
             const updatedtask = [...task];
             [updatedtask[index], updatedtask[index + 1]] = [updatedtask[index + 1], updatedtask[index]];
-            settask();
+            settask(updatedtask);
         }
 
 

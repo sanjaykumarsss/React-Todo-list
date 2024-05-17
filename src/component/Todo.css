@@ -1,0 +1,71 @@
+body{
+    background-color: #4413c0;
+}
+.todoform{
+    width: 500px;
+    height: auto;
+    background-color: rgba(137, 26, 26, 0.782);
+    position: relative;
+    color: white;
+    padding: 20px 30px;
+    position: relative;
+    left: 450px;
+    top: 130px;    
+}
+.heading{
+    text-align: center;
+}
+.inputbtn{
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+
+.add{
+    margin-left: 50px;
+}
+
+.inputbtn button{
+    background-color:  rgb(24, 7, 24);
+    padding: 7px 16px;
+    font-size: 18px;
+    color: white;
+    
+}
+.inputbtn input{
+    padding: 7px 15px;
+    width: 60%;
+    font-size: 17px;
+}
+.mapclass{
+    background-color:  rgb(119, 4, 119);
+    margin: 15px 0;
+    padding: 7px 15px;
+    font-size: 22px;
+    border-radius: 5px;
+}
+.editdel{
+    float: right;
+}
+.editdel button{
+    margin-left: 8px;
+    font-size: 15px;
+}
+.edit{
+    color: black;
+    background-color: aqua;
+}
+.delete{
+    color: black;
+    background-color: rgb(220, 53, 69);
+}
+.save{
+    color: black;
+    background-color: rgb(25, 135, 84);
+}
+.editinput{
+    padding: 3px 8px;
+    font-size: 17px;
+
+
+}
